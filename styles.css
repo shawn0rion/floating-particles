@@ -1,0 +1,66 @@
+:root {
+  --menu-size: 300px;
+  --menu-padding: 30px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#canvas {
+  background-color: black;
+}
+
+#menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--menu-size);
+  margin: auto;
+  padding: var(--menu-padding);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#menu label {
+  margin: 1rem 0 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+#menu input[type="range"] {
+  width: 100%;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.color-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #777;
+}
+
+.selected {
+  border: 2px solid #000;
+}
+
+#speed-settings input[type="range"] {
+  margin-left: 20px;
+  width: calc(100% - 20px);
+}
+
+#speed-settings > label {
+  margin-left: 20px;
+}
